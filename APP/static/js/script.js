@@ -5,10 +5,10 @@ async function main(){
 
 }
 
-/*function isEmpty(){
+function isEmpty(){
     var str = document.forms['myForm'].question.value;
     if( !str.replace(/\s+/, '').length ) {
          alert( "Kérlek válaszolj az összes kérdésre." );
          return false;
     }
-}*/
+}
