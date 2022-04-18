@@ -13,13 +13,14 @@
 	</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %} ">
     <script src="{% static 'js/script.js' %}"></script>
+	<link php="{static 'php/result.php' %}">
 </head>
 
 <body>
 
+	
 
-
-	<form id="form">
+	<form id="form" name="myForm">
 
         <h1>Mohikánok - Bemutatkozás</h1>
 
@@ -28,7 +29,7 @@
 				Mi a játékosneved?
 			</label>
 
-            <input type="text"
+            <input type="text" name="question" name="jatekosnev"
 				id="name"
 				placeholder="Add meg a játékosneved" />
 		</div>
@@ -39,7 +40,7 @@
 			</label>
 			
 
-			<select name="role" id="role">
+			<select name="role" id="role" name="nem">
 				<option value="nő">Nő</option>
 				<option value="férfi">Férfi</option>
 				<option value="egyéb">Egyéb</option>
@@ -53,7 +54,7 @@
 			</label>
 
 
-			<input type="text"
+			<input type="text" name="question" name="keresztnev"
 				id="name"
 				placeholder="Add meg a keresztneved" />
 		</div>
@@ -64,7 +65,7 @@
 			</label>
 
 
-			<input type="text"
+			<input type="text" name="question" name="kor"
 				id="age"
 				placeholder="Add meg az életkorod" />
 		</div>
@@ -75,7 +76,7 @@
 			</label>
 
 
-			<input type="text"
+			<input type="text" name="question" name="orszag"
 				id="name"
 				placeholder="Add meg az országot, ahol élsz" />
 		</div>
@@ -86,7 +87,7 @@
 			</label>
 			
 
-			<select name="role" id="role">
+			<select name="role" id="role" name="statusz">
 				<option value="először játszom a játékkal">Először játszom a játékkal</option>
 				<option value="újrakezdő játékos vagyok">Újrakezdő játékos vagyok</option>
 				<option value="régi motoros vagyok">Régi motoros vagyok</option>
@@ -101,37 +102,37 @@
 
 
 			<label for="recommed-1">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-1"
 					name="recommed">Kevesebb, mint 1 hónapja</input>
 			</label>
 			<label for="recommed-2">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-2"
 					name="recommed">1-4 hónapja</input>
 			</label>
 			<label for="recommed-3">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-3"
 					name="recommed">4-12 hónapja</input>
 			</label>
             <label for="recommed-4">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-4"
 					name="recommed">1-3 éve</input>
 			</label>
             <label for="recommed-5">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-5"
 					name="recommed">3-5 éve</input>
 			</label>
             <label for="recommed-6">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-6"
 					name="recommed">5-8 éve</input>
 			</label>
             <label for="recommed-7">
-				<input type="radio"
+				<input type="radio" 
 					id="recommed-7"
 					name="recommed">Több, mint 8 éve</input>
 			</label>
@@ -184,14 +185,14 @@
 			</label>
 
 			
-			<textarea name="comment" id="comment"
+			<textarea name="comment" id="comment" name="egyeb"
 				placeholder="Add meg itt">
 			</textarea>
 		</div>
-		
-		<form action="C:\Users\Maci\Videos\eredmények\ide.txt" method="post">
-			<button type="submit">Send</button>
-		</form>
+
+
+		<button action="result.php" onclick="return isEmpty()" type="submit" value>Submit</button>
+
 	</form>
 </body>
 
