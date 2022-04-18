@@ -9,143 +9,189 @@
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
 	<title>
-		Build a Survey Form using HTML and CSS
+		Mohikánok - Bemutatkozás
 	</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %} ">
     <script src="{% static 'js/script.js' %}"></script>
 </head>
 
 <body>
-	<h1>GeeksforGeeks Survey Form</h1>
+
 
 
 	<form id="form">
 
+        <h1>Mohikánok - Bemutatkozás</h1>
+
+        <div class="form-control">
+			<label for="name" id="label-name">
+				Mi a játékosneved?
+			</label>
+
+            <input type="text"
+				id="name"
+				placeholder="Add meg a játékosneved" />
+		</div>
+
+        <div class="form-control">
+			<label for="role" id="label-role">
+				Mi a nemed?
+			</label>
+			
+
+			<select name="role" id="role">
+				<option value="nő">Nő</option>
+				<option value="férfi">Férfi</option>
+				<option value="egyéb">Egyéb</option>
+				</option>
+			</select>
+		</div>
 
 		<div class="form-control">
 			<label for="name" id="label-name">
-				Name
+				Mi a keresztneved?
 			</label>
 
 
 			<input type="text"
 				id="name"
-				placeholder="Enter your name" />
-		</div>
-
-		<div class="form-control">
-			<label for="email" id="label-email">
-				Email
-			</label>
-
-
-			<input type="email"
-				id="email"
-				placeholder="Enter your email" />
+				placeholder="Add meg a keresztneved" />
 		</div>
 
 		<div class="form-control">
 			<label for="age" id="label-age">
-				Age
+				Mennyi idős vagy?
 			</label>
 
 
 			<input type="text"
 				id="age"
-				placeholder="Enter your age" />
+				placeholder="Add meg az életkorod" />
 		</div>
 
-		<div class="form-control">
+        <div class="form-control">
+			<label for="age" id="label-age">
+				Melyik országban élsz?
+			</label>
+
+
+			<input type="text"
+				id="age"
+				placeholder="Add meg az országot, ahol élsz" />
+		</div>
+
+        <div class="form-control">
 			<label for="role" id="label-role">
-				Which option best describes you?
+				Melyik igaz rád leginkább?
 			</label>
 			
 
 			<select name="role" id="role">
-				<option value="student">Student</option>
-				<option value="intern">Intern</option>
-				<option value="professional">
-					Professional
-				</option>
-				<option value="other">Other</option>
+				<option value="először játszom a játékkal">Először játszom a játékkal</option>
+				<option value="újrakezdő játékos vagyok">Újrakezdő játékos vagyok</option>
+				<option value="régi motoros vagyok">Régi motoros vagyok</option>
+                <option value="egyéb">Egyéb</option>            
 			</select>
 		</div>
 
 		<div class="form-control">
 			<label>
-				Would you recommed GeeksforGeeks
-				to a friend?
+				Mióta játszol a játékkal?
 			</label>
 
 
 			<label for="recommed-1">
 				<input type="radio"
 					id="recommed-1"
-					name="recommed">Yes</input>
+					name="recommed">Kevesebb, mint 1 hónapja</input>
 			</label>
 			<label for="recommed-2">
 				<input type="radio"
 					id="recommed-2"
-					name="recommed">No</input>
+					name="recommed">1-4 hónapja</input>
 			</label>
 			<label for="recommed-3">
 				<input type="radio"
 					id="recommed-3"
-					name="recommed">Maybe</input>
+					name="recommed">4-12 hónapja</input>
+			</label>
+            <label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">1-3 éve</input>
+			</label>
+            <label for="recommed-5">
+				<input type="radio"
+					id="recommed-5"
+					name="recommed">3-5 éve</input>
+			</label>
+            <label for="recommed-6">
+				<input type="radio"
+					id="recommed-6"
+					name="recommed">5-8 éve</input>
+			</label>
+            <label for="recommed-7">
+				<input type="radio"
+					id="recommed-7"
+					name="recommed">Több, mint 8 éve</input>
 			</label>
 		</div>
 
 		<div class="form-control">
-			<label>Languages and Frameworks known
-				<small>(Check all that apply)</small>
-			</label>
+			<label>Mely állítások igazak rád?</label>
 
 			<label for="inp-1">
 				<input type="checkbox"
-					name="inp">C</input></label>
+					name="inp">Szoktam más játékosokat támadni</input></label>
 			<label for="inp-2">
 				<input type="checkbox"
-					name="inp">C++</input></label>
+					name="inp">Aktívan eventezek</input></label>
 			<label for="inp-3">
 				<input type="checkbox"
-					name="inp">C#</input></label>
+					name="inp">Gyakran segítek a védekezésben, ha bent vagyok</input></label>
 			<label for="inp-4">
 				<input type="checkbox"
-					name="inp">Java</input></label>
+					name="inp">Nem költöttem még pénzt a játékra</input></label>
 			<label for="inp-5">
 				<input type="checkbox"
-					name="inp">Python</input></label>
+					name="inp">Erődöket mástól foglalok</input></label>
 			<label for="inp-6">
 				<input type="checkbox"
-					name="inp">JavaScript</input></label>
+					name="inp">Szoktam műemlékeket és/vagy laborokat foglalni</input></label>
 			<label for="inp-7">
 				<input type="checkbox"
-					name="inp">React</input></label>
+					name="inp">A váramba más személy is be tud lépni</input></label>
 			<label for="inp-7">
 				<input type="checkbox"
-					name="inp">Angular</input></label>
+					name="inp">Nem szoktam/ritkán eventezek</input></label>
 			<label for="inp-7">
 				<input type="checkbox"
-					name="inp">Django</input></label>
+					name="inp">Kulturáltan használom a chatet, nem káromkodom, nem sértek meg másokat</input></label>
 			<label for="inp-7">
 				<input type="checkbox"
-					name="inp">Spring</input></label>
+					name="inp">Erődjeimet magam építem fel</input></label>
+			<label for="inp-8">
+				<input type="checkbox"
+					name="inp">Vásároltam már rubint</input></label>
+			<label for="inp-9">
+				<input type="checkbox"
+					name="inp">Nemrég kezdzem a játékot, még nem tudok válaszolni a fentebbi állításokra</input></label>
 		</div>
 
 		<div class="form-control">
 			<label for="comment">
-				Any comments or suggestions
+				További tudnivalók/érdekességek, amiket szeretnél megosztani
 			</label>
 
 
 			<textarea name="comment" id="comment"
-				placeholder="Enter your comment here">
+				placeholder="Add meg itt">
 			</textarea>
 		</div>
 
 
 		<button type="submit" value="submit">
-			Submit
+			Küldés
 		</button>
 	</form>
 </body>
