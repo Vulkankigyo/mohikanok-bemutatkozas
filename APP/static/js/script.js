@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', main)
     });
 });*/
 
-$(document).on('submit', 'form', function () {
+/*$(document).on('submit', 'form', function () {
 
     var validate = true;
     var unanswered = new Array();
@@ -100,4 +100,37 @@ $(document).on('submit', 'form', function () {
         alert(msg);
     }
     return validate;
-});
+});*/
+
+let saveFile = () => {
+    	
+    const jatekosnev = document.getElementById('jatekosnev');
+    const nem = document.getElementById('nem');
+    const keresztnev = document.getElementById('keresztnev');
+    const betolt18 = document.getElementById('betolt18');
+    const orszag = document.getElementById('orszag');
+    
+    let data = 
+        '\r Name: ' + jatekosnev.value + ' \r\n ' + 
+        'Age: ' + nem.value + ' \r\n ' + 
+        'Email: ' + keresztnev.value + ' \r\n ' + 
+        'Country: ' + betolt18.value + ' \r\n ' + 
+        'Message: ' + orszag.value;
+    
+    const textToBLOB = new Blob([data], { type: 'text/plain' });
+    const sFileName = 'answers.txt';	
+
+    let newLink = document.createElement("a");
+    newLink.download = sFileName;
+
+    if (window.webkitURL != null) {
+        newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+    }
+    else {
+        newLink.href = window.URL.createObjectURL(textToBLOB);
+        newLink.style.display = "none";
+        document.body.appendChild(newLink);
+    }
+
+    newLink.click(); 
+}

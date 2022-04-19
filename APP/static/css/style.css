@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
     font-family: 'Times New Roman', Times, serif;
     max-width: 500px;
     margin: 10px auto;
@@ -12,7 +12,7 @@ body {
 }
 
 small {
-    margin: 100px;
+    margin: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     color: red;
@@ -64,4 +64,4 @@ button {
     height: 40px;
     margin-top: 50px;
     margin-bottom: 20px;
-}
+}*/
