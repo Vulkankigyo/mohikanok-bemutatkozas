@@ -20,13 +20,14 @@
 
 	
 
-	<form id="form" name="myForm">
+	<form id="form" name="myForm" name="myFormm">
 
         <h1>Mohikánok - Bemutatkozás</h1>
 
         <div class="form-control">
 			<label for="name" id="label-name">
 				Mi a játékosneved?
+				<small>(kötelező)</small>
 			</label>
 
             <input type="text" name="question" name="jatekosnev"
@@ -34,112 +35,156 @@
 				placeholder="Add meg a játékosneved" />
 		</div>
 
-        <div class="form-control">
-			<label for="role" id="label-role">
-				Mi a nemed?
-			</label>
-			
-
-			<select name="role" id="role" name="nem">
-				<option value="nő">Nő</option>
-				<option value="férfi">Férfi</option>
-				<option value="egyéb">Egyéb</option>
-				</option>
-			</select>
-		</div>
-
-		<div class="form-control">
-			<label for="name" id="label-name">
-				Mi a keresztneved?
-			</label>
-
-
-			<input type="text" name="question" name="keresztnev"
-				id="name"
-				placeholder="Add meg a keresztneved" />
-		</div>
-
-		<div class="form-control">
-			<label for="age" id="label-age">
-				Mennyi idős vagy?
-			</label>
-
-
-			<input type="text" name="question" name="kor"
-				id="age"
-				placeholder="Add meg az életkorod" />
-		</div>
-
-        <div class="form-control">
-			<label for="name" id="label-name">
-				Melyik országban élsz?
-			</label>
-
-
-			<input type="text" name="question" name="orszag"
-				id="name"
-				placeholder="Add meg az országot, ahol élsz" />
-		</div>
-
-        <div class="form-control">
-			<label for="role" id="label-role">
-				Melyik igaz rád leginkább?
-			</label>
-			
-
-			<select name="role" id="role" name="statusz">
-				<option value="először játszom a játékkal">Először játszom a játékkal</option>
-				<option value="újrakezdő játékos vagyok">Újrakezdő játékos vagyok</option>
-				<option value="régi motoros vagyok">Régi motoros vagyok</option>
-                <option value="egyéb">Egyéb</option>            
-			</select>
-		</div>
-
-		<div class="form-control">
+        <div class="form-control" class="questionn">
 			<label>
-				Mióta játszol a játékkal?
+				Mi a nemed?
+				<small>(kötelező)</small>
 			</label>
 
 
 			<label for="recommed-1">
 				<input type="radio" 
 					id="recommed-1"
-					name="recommed">Kevesebb, mint 1 hónapja</input>
+					name="recommed">Nő</input>
 			</label>
 			<label for="recommed-2">
 				<input type="radio" 
 					id="recommed-2"
-					name="recommed">1-4 hónapja</input>
+					name="recommed">Férfi</input>
 			</label>
 			<label for="recommed-3">
 				<input type="radio" 
 					id="recommed-3"
-					name="recommed">4-12 hónapja</input>
+					name="recommed">Egyéb</input>
 			</label>
             <label for="recommed-4">
 				<input type="radio" 
 					id="recommed-4"
-					name="recommed">1-3 éve</input>
-			</label>
-            <label for="recommed-5">
-				<input type="radio" 
-					id="recommed-5"
-					name="recommed">3-5 éve</input>
-			</label>
-            <label for="recommed-6">
-				<input type="radio" 
-					id="recommed-6"
-					name="recommed">5-8 éve</input>
-			</label>
-            <label for="recommed-7">
-				<input type="radio" 
-					id="recommed-7"
-					name="recommed">Több, mint 8 éve</input>
+					name="recommed">Inkább nem válaszolnék</input>
 			</label>
 		</div>
 
 		<div class="form-control">
-			<label>Mely állítások igazak rád?</label>
+			<label for="name" id="label-name">
+				Mi a keresztneved?
+				<small>(nem kötelező)</small>
+			</label>
+
+
+			<input type="text" name="keresztnev"
+				id="name"
+				placeholder="Add meg a keresztneved" />
+		</div>
+
+		<div class="form-control">
+			<label>
+				Betöltötted már a 18. életévedet?
+				<small>(kötelező)</small>
+			</label>
+
+
+			<label for="rerecommed-5">
+				<input type="radio"
+					id="rerecommed-5"
+					name="rerecommed">Igen</input>
+			</label>
+			<label for="rerecommed-6">
+				<input type="radio"
+					id="rerecommed-6"
+					name="rerecommed">Nem</input>
+			</label>
+		</div>
+
+        <div class="form-control">
+			<label for="name" id="label-name">
+				Melyik országban élsz?
+				<small>(nem kötelező)</small>
+			</label>
+
+
+			<input type="text" name="orszag"
+				id="name"
+				placeholder="Add meg az országot, ahol élsz" />
+		</div>
+
+		<div class="form-control">
+			<label>
+				Melyik igaz rád leginkább?
+				<small>(kötelező)</small>
+			</label>
+
+
+			<label for="rererecommed-7">
+				<input type="radio" 
+					id="rererecommed-7"
+					name="rererecommed">Először játszom a játékkal</input>
+			</label>
+			<label for="rererecommed-8">
+				<input type="radio" 
+					id="rererecommed-8"
+					name="rererecommed">Újrakezdő játékos vagyok</input>
+			</label>
+			<label for="rererecommed-9">
+				<input type="radio" 
+					id="rererecommed-9"
+					name="rererecommed">Régi motoros vagyok</input>
+			</label>
+            <label for="rererecommed-10">
+				<input type="radio" 
+					id="rererecommed-10"
+					name="rererecommed">Egyéb</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Mióta játszol a játékkal?
+				<small>(kötelező)</small>
+			</label>
+
+
+			<label for="rerererecommed-11">
+				<input type="radio" 
+					id="rerererecommed-11"
+					name="rerererecommed">Kevesebb, mint 1 hónapja</input>
+			</label>
+			<label for="rerererecommed-12">
+				<input type="radio" 
+					id="rerererecommed-12"
+					name="rerererecommed">1-4 hónapja</input>
+			</label>
+			<label for="rerererecommed-13">
+				<input type="radio" 
+					id="rerererecommed-13"
+					name="rerererecommed">4-12 hónapja</input>
+			</label>
+            <label for="rerererecommed-14">
+				<input type="radio" 
+					id="rerererecommed-14"
+					name="rerererecommed">1-3 éve</input>
+			</label>
+            <label for="rerererecommed-15">
+				<input type="radio" 
+					id="rerererecommed-15"
+					name="rerererecommed">3-5 éve</input>
+			</label>
+            <label for="rerererecommed-16">
+				<input type="radio" 
+					id="rerererecommed-16"
+					name="rerererecommed">5-8 éve</input>
+			</label>
+            <label for="rerererecommed-17">
+				<input type="radio" 
+					id="rerererecommed-17"
+					name="rerererecommed">Több, mint 8 éve</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Mely állítások igazak rád?
+				<small>(több állítás is bejelölhető)</small>
+			</label>
 
 			<label for="inp-1">
 				<input type="checkbox"
@@ -182,10 +227,11 @@
 		<div class="form-control">
 			<label for="comment">
 				További tudnivalók/érdekességek, amiket szeretnél megosztani
+				<small>(nem kötelező)</small>
 			</label>
 
 			
-			<textarea name="comment" id="comment" name="egyeb"
+			<textarea maxlength="200" name="comment" id="comment" name="egyeb"
 				placeholder="Add meg itt">
 			</textarea>
 		</div>
